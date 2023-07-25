@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My third Assignment</title>
+    <!-- daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font awesome  -->
+    <script src="https://kit.fontawesome.com/c523aff713.js" crossorigin="anonymous"></script>
+
+    <style>
+        .lato{
+            font-family: 'EB Garamond', serif;
+        }
+        .nav-bg{
+            border:3px solid black;
+        }
+        .nav-border-radius{
+            border-radius: 600px;
+        }
+
+    </style>
+       
+</head>
+
+<body class="lato">
+    <!-- The navbar is started from here -->
+    <header class="max-w-screen-2xl mx-auto nav-bg">
+        <nav>
+            <div class="navbar  bg-[#F85559] lg:h-24 lg:rounded-[300px]">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                 <span class="navbar-center hidden lg:flex text-white font-medium lg:ml-10"> 
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                  </ul>
+                </span>
+                </div>
+                <div >
+                 
+                  <a class="btn btn-ghost normal-case text-xl text-white lg:text-5xl font-bold"><img src="images/logo.png"> Fruit Burst</a>
+                </div>
+                <div class="navbar-end">
+                    
+                  <input class="lg:w-96 lg:h-12 lg:rounded-3xl lg:pl-[20px] text-[#12121266] font-medium lg:mr-10" type="text" placeholder="Search here"> <span class="relative flex items-center"><i class="absolute -left-20 fa-solid fa-magnifying-glass"></i></span>
+                </div>
+              </div>
+
+        </nav>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
