@@ -20,7 +20,8 @@
     .lato {
       font-family: 'EB Garamond', serif;
     }
-.nav-border-radius {
+
+    .nav-border-radius {
       border-radius: 600px;
     }
   </style>
@@ -28,10 +29,10 @@
 </head>
 
 <body class="lato">
-   <!-- The navbar is started from here -->
+  <!-- The navbar is started from here -->
   <header class="max-w-screen-2xl mx-auto nav-bg border-none">
     <nav>
-      <div class="navbar  bg-[#F85559] lg:h-24 lg:rounded-[300px]">
+      <div class="navbar  bg-[#F85559] lg:h-24 lg:rounded-[300px] flex-row-reverse gap-28 lg:flex-row">
         <div class="navbar-start">
           <div class="dropdown">
             <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -61,7 +62,7 @@
           <a class="btn btn-ghost normal-case text-xl text-white lg:text-5xl font-bold"><img src="images/logo.png">
             Fruit Burst</a>
         </div>
-        <div class="navbar-end">
+        <div class="navbar-end hidden md:flex">
 
           <input class="lg:w-96 lg:h-12 lg:rounded-3xl lg:pl-[20px] text-[#12121266] font-medium lg:mr-10" type="text"
             placeholder="Search here"> <span class="relative flex items-center"><i
@@ -110,47 +111,51 @@
       </div>
       <!-- slider content -->
       <div class="relative text-white">
-        <div class=" text-center absolute -top-[500px] left-[320px] ">
-          <h1 class="text-7xl font-extrabold lg:mb-5">Exotic tastes at your doorstep</h1>
-          <p class="text-lg font-medium lg:mb-20">We supply highly quality organic products</p>
+        <div
+          class=" text-center absolute -top-[125px] left-[40px] md:-top-[250px] md:left-[100px] lg:-top-[500px] lg:left-[320px] ">
+          <h1 class="text-2xl md:text-4xl lg:text-7xl font-extrabold lg:mb-5">Exotic tastes at your doorstep</h1>
+          <p class="text-base md:text-lg font-medium lg:mb-20">We supply highly quality organic products</p>
           <button class="btn bg-[#F85559] border-none  text-white">Shop Now</button>
         </div>
       </div>
       <!-- A optional part of the slider -->
       <!-- This is the container -->
 
-      <div class="relative">
-        <div
-          class="grid grid-cols-1 lg:grid-cols-5 max-w-7xl mx-auto h-48 items-center bg-[#FFF] absolute -top-32 left-72 gap-10 shadow-sm">
-          <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit1.png" alt="">
-            <p>Berry</p>
-          </div>
-          <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit2.png" alt="">
-            <p>Orange</p>
-          </div>
-          <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit3.png" alt="">
-            <p>Mango</p>
-          </div>
-          <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit4.png" alt="">
-            <p>Strawberry</p>
-          </div>
-          <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit5.png" alt="">
-            <p>Pomegranate</p>
+      <div class="">
+        <div class="relative">
+          <div
+            class="grid  hidden lg:flex lg:grid-cols-5 max-w-7xl mx-auto h-48 items-center bg-[#FFF] absolute -top-32 left-72 gap-10 shadow-sm">
+            <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit1.png" alt="">
+              <p>Berry</p>
+            </div>
+            <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit2.png" alt="">
+              <p>Orange</p>
+            </div>
+            <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit3.png" alt="">
+              <p>Mango</p>
+            </div>
+            <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit4.png" alt="">
+              <p>Strawberry</p>
+            </div>
+            <div class="text-center text-xl font-semibold text-[#121212CC]"><img src="images/fruit5.png" alt="">
+              <p>Pomegranate</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- slider is finished here -->
+
     <!-- deal of the day -->
     <section class="max-w-screen-2xl mx-auto my-12 mt-40 ">
-      <div class="flex justify-center items-center">
+      <div class="flex flex-col lg:flex-row justify-center items-center text-center">
         <div class="flex-1">
-          <h2 class="text-5xl font-extrabold mb-5">Deal of the day</h2>
+          <h2 class="text-2xl md:text-3xl lg:text-5xl font-extrabold mb-5">Deal of the day</h2>
           <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical<br> Latin
             literature from 45 BC, making it over 2000 years old.</p>
         </div>
         <div class="flex-1">
-          <ul class="flex gap-10 justify-center items-center text-3xl font-extrabold">
+          <ul class="flex gap-5 lg:gap-10 justify-center items-center  text-xl md:text-3xl font-extrabold">
             <li>29 <br>Days </li><i class="fa-solid fa-ellipsis-vertical"></i>
             <li> 15<br>Hours</li><i class="fa-solid fa-ellipsis-vertical"></i>
             <li> 25<br>Minutes</li><i class="fa-solid fa-ellipsis-vertical"></i>
@@ -159,10 +164,11 @@
         </div>
       </div>
 
-      <!-- card title is finished -->
-    </section>
 
-    <!-- final card section -->
+    </section>
+    <!-- card title is finished -->
+
+    <!-- final card is started section -->
     <section class="max-w-screen-2xl mx-auto mt-12 grid grid-cols-1 lg:grid-cols-4 lg:gap-6">
 
 
@@ -172,7 +178,7 @@
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
-          
+
           <!-- ratings -->
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
@@ -192,17 +198,20 @@
                 <div>
                   <div class="flex justify-center"><img class=" mb-5" src="images/fruit6.png" alt=""></div>
                   <h3 class="font-extrabold text-3xl text-[#121212]">Apples</h3>
-                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the
+                    most <br> amazing and fresh fruits.</p>
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2"" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2""
+                      checked />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-3"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-4"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-5"" />
                   </div>
                 </div>
                 <div class="modal-action flex justify-evenly">
-                  <label for="my_modal_6" class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
+                  <label for="my_modal_6"
+                    class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
                   <div><button class="btn bg-[#F85559] text-xl text-white">Buy Now</button></div>
                 </div>
               </div>
@@ -213,7 +222,7 @@
 
 
 
-<!-- The card number is two -->
+      <!-- The card number is two -->
 
       <div class="card mt-5 border-2">
         <figure class="px-10 pt-10">
@@ -221,7 +230,7 @@
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
-          
+
           <!-- ratings -->
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -231,47 +240,50 @@
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
           </div>
           <div class="card-actions">
-             <!-- The button to open modal -->
-             <label for="my_modal_7" class="btn">Details</label>
+            <!-- The button to open modal -->
+            <label for="my_modal_7" class="btn">Details</label>
 
-             <!-- Put this part before body tag -->
-             <input type="checkbox" id="my_modal_7" class="modal-toggle" />
-             <div class="modal">
-               <div class="modal-box grid justify-center">
-                 <div>
-                   <div class="flex justify-center"><img class=" mb-5" src="images/fruit7.png" alt=""></div>
-                   <h3 class="font-extrabold text-3xl text-[#121212] ">Orange</h3>
-                   <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
-                   <div class="rating">
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2"" checked />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-3"" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-4"" />
-                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-5"" />
-                   </div>
-                 </div>
-                 <div class="modal-action flex justify-evenly">
-                   <label for="my_modal_7"  class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
-                   <div><button class="btn bg-[#F85559] text-xl text-white">Buy Now</button></div>
-                 </div>
-               </div>
-             </div>
-            
-          
+            <!-- Put this part before body tag -->
+            <input type="checkbox" id="my_modal_7" class="modal-toggle" />
+            <div class="modal">
+              <div class="modal-box grid justify-center">
+                <div>
+                  <div class="flex justify-center"><img class=" mb-5" src="images/fruit7.png" alt=""></div>
+                  <h3 class="font-extrabold text-3xl text-[#121212] ">Orange</h3>
+                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the
+                    most <br> amazing and fresh fruits.</p>
+                  <div class="rating">
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2""
+                      checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-3"" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-4"" />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-5"" />
+                  </div>
+                </div>
+                <div class="modal-action flex justify-evenly">
+                  <label for="my_modal_7"
+                    class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
+                  <div><button class="btn bg-[#F85559] text-xl text-white">Buy Now</button></div>
+                </div>
+              </div>
+            </div>
+
+
           </div>
         </div>
       </div>
 
 
 
-<!-- The card number is three -->
+      <!-- The card number is three -->
       <div class="card mt-5 border-2">
         <figure class="px-10 pt-10">
           <img src="./images/fruit8.png" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
-          
+
           <!-- ratings -->
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -291,17 +303,20 @@
                 <div>
                   <div class="flex justify-center"><img class=" mb-5" src="images/fruit8.png" alt=""></div>
                   <h3 class="font-extrabold text-3xl text-[#121212] ">Red Dragon</h3>
-                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the
+                    most <br> amazing and fresh fruits.</p>
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2"" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2""
+                      checked />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-3"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-4"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-5"" />
                   </div>
                 </div>
                 <div class="modal-action flex justify-evenly">
-                  <label for="my_modal_8"  class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
+                  <label for="my_modal_8"
+                    class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
                   <div><button class="btn bg-[#F85559] text-xl text-white">Buy Now</button></div>
                 </div>
               </div>
@@ -311,14 +326,14 @@
       </div>
 
 
-<!-- The card number  is four -->
+      <!-- The card number  is four -->
       <div class="card mt-5 border-2">
         <figure class="px-10 pt-10">
           <img src="./images/fruit9.png" class="rounded-xl" />
         </figure>
         <div class="card-body items-center text-center">
           <h2 class="card-title text-2xl font-bold">12.90$ - 18.85$</h2>
-          
+
           <!-- ratings -->
           <div class="rating">
             <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
@@ -338,17 +353,20 @@
                 <div>
                   <div class="flex justify-center"><img class=" mb-5" src="images/fruit9.png" alt=""></div>
                   <h3 class="font-extrabold text-3xl text-[#121212] ">Banana</h3>
-                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                  <p class="py-4 text-[#12121299] font-semibold">Professional employees are there for you to pick the
+                    most <br> amazing and fresh fruits.</p>
                   <div class="rating">
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-1" />
-                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2"" checked />
+                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-2""
+                      checked />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-3"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-4"" />
                     <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400 name=" rating-10-5"" />
                   </div>
                 </div>
                 <div class="modal-action flex justify-evenly">
-                  <label for="my_modal_9" class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
+                  <label for="my_modal_9"
+                    class="btn border-[1px] border-[#F85559] text-xl font-extrabold text-[#F85559]">CLOSE</label>
                   <div><button class="btn bg-[#F85559] text-xl text-white">Buy Now</button></div>
                 </div>
               </div>
@@ -360,21 +378,32 @@
 
     </section>
     <!-- The card section is finished -->
+    <!-- Shop All button is here -->
+    <section class="max-w-screen-2xl mx-auto flex justify-center mb-10 mt-10 lg:mb-36 lg:mt-14">
+      <div><button class="btn bg-[#F85559] text-xl text-white">Shop All</button></div>
+    </section>
+    <!-- Shop All button is ended -->
 
-
+    <!-- Meet the Team section is started here -->
     <section class="max-w-screen-2xl  mx-auto my-12 ">
-      <div class="hero lg:h-[700px] " style="background-image: url(images/banner1.png);">
+      <div class="hero  lg:h-[700px] " style="background-image: url(images/banner1.png);">
         <div class="hero-overlay bg-opacity-60"></div>
         <div class="hero-content text-center text-neutral-content lg:mb-[300px]">
-          <div class="max-w-lg ">
-            <h1 class="mb-5 text-5xl font-extrabold">Meet the team section</h1>
-            <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
-              Latin literature from 45 BC, making it over 2000 years old.</p>
+
+          <div class="relative">
+            <div class="max-w-lg relative -top-[630px] lg:top-0">
+              <h1 class="mb-5  text-2xl md:text-4xl lg:text-5xl font-extrabold">Meet the team section</h1>
+              <p class="">Contrary to popular belief, is not simply random text. It has roots in a piece of classical
+                Latin literature from 45 BC, making it over 2000 years old.</p>
+
+            </div>
 
           </div>
+
+
         </div>
         <!-- Fruits expert -->
-        <div class="grid grid-cols-1 lg:grid-cols-4 lg:gap-28">
+        <div class="grid grid-cols-1 mt-56 lg:grid-cols-4 gap-14 md:gap-20 lg:gap-28">
           <!-- fruits expert One -->
 
           <div class="text-center mt-24">
@@ -416,22 +445,23 @@
 
       </div>
     </section>
+    <!-- Meet the team is finished -->
 
-    <!-- Why  choose us section -->
-    <section class="text-center max-w-screen-2xl mx-auto">
+     <!-- Why  choose us section -->
+     <section class="text-center max-w-screen-2xl mx-auto">
       <h3 class="text-5xl font-extrabold mb-6">Why Choose Us</h3>
       <p class="font-semibold text-[#12121299]">Contrary to popular belief, is not simply random text. It has roots in a
         piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
 
       <!-- container div -->
-      <div class="grid grid-cols-1 lg:grid-cols-3 justify-center items-center mt-10 mb-24">
-        <div class="flex-1 text-left space-y-10 ">
+      <div class="grid grid-cols-1  lg:grid-cols-3 justify-center items-center mt-10 mb-24">
+        <div class="flex-1 text-center lg:text-left space-y-10 ">
 
 
-          <div class="flex items-center gap-5 ">
+          <div class="flex flex-col lg:flex-row items-center gap-5 ">
             <i class="text-4xl border-[10px] rounded-full fa-solid fa-people-group"></i>
             <div> <h3 class="text-2xl font-extrabold text-[#121212]">Dedicated Team</h3>
-             <div class="border-[1px] border-[#121212CC] w-28"></div>
+             <div class="flex justify-center lg:justify-start my-5"><div class="border-[1px] border-[#121212CC] w-28" ></div></div>
              <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br> the most
                amazing and fresh fruits.</p>
               </div>
@@ -441,10 +471,10 @@
 
 
 
-          <div class="flex items-center gap-5">
+          <div class="flex flex-col lg:flex-row items-center gap-5">
             <i class="text-4xl border-[10px] rounded-full fa-solid fa-heart-circle-check"></i>
             <div><h3 class="text-2xl font-extrabold text-[#121212]">Fresh is Best</h3>
-              <div class="border-[1px] border-[#121212CC] w-28"></div>
+              <div class="flex justify-center lg:justify-start my-5"><div class="border-[1px] border-[#121212CC] w-28" ></div></div>
               <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br>the most
                 amazing and fresh fruits.</p>
             </div>
@@ -452,10 +482,10 @@
 
 
           
-         <div class="flex items-center gap-5">
+         <div class="flex flex-col lg:flex-row items-center gap-5">
           <i class="text-4xl border-[10px] rounded-full fa-solid fa-gift"></i>
           <div> <h3 class="text-2xl font-extrabold text-[#121212]">Gift Certificates</h3>
-            <div class="border-[1px] border-[#121212CC] w-28"></div>
+            <div class="flex justify-center lg:justify-start my-5"><div class="border-[1px] border-[#121212CC] w-28" ></div></div>
             <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br>the most
               amazing and fresh fruits.</p></div>
         </div>
@@ -463,16 +493,16 @@
         
         </div>
 
-        <div class="flex-1"><img src="images/whychoose1.png" alt=""></div>
+        <div class="flex-1 flex justify-center mt-7 mb-7"><img src="images/whychoose1.png" alt=""></div>
 
 
 
-        <div class="flex-1 text-right space-y-10">
+        <div class="flex-1 text-center grid justify-center lg:justify-end lg:text-right space-y-10">
 
-          <div class="flex items-center gap-5">
+          <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
             <div> <h3 class="text-2xl font-extrabold text-[#121212]">Integrated Supplier</h3>
-              <div class="flex justify-end">
-                <div class="border-[1px] border-[#121212CC] w-28 "></div>
+              <div class="flex justify-center lg:justify-end my-5">
+                <div class="border-[1px] border-[#121212CC] w-28" ></div>
               </div>
               <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br>the most
                 amazing and fresh fruits.</p></div>
@@ -484,10 +514,10 @@
          
 
 
-         <div class="flex items-center gap-5">
+         <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
           <div> <h3 class="text-2xl font-extrabold text-[#121212]">Sustainable Practice</h3>
-            <div class="flex justify-end">
-              <div class="border-[1px] border-[#121212CC] w-28 "></div>
+            <div class="flex justify-center lg:justify-end my-5">
+              <div class="border-[1px] border-[#121212CC] w-28" ></div>
             </div>
             <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br>the most
               amazing and fresh fruits.</p></div>
@@ -497,10 +527,10 @@
          
          
          
-         <div class="flex items-center gap-5">
+         <div class="flex flex-col-reverse lg:flex-row items-center gap-5">
           <div><h3 class="text-2xl font-extrabold text-[#121212]">The Benefits Only</h3>
-            <div class="flex justify-end">
-              <div class="border-[1px] border-[#121212CC] w-28 "></div>
+            <div class="flex justify-center lg:justify-end my-5">
+              <div class="border-[1px] border-[#121212CC] w-28" ></div>
             </div>
             <p class="text-[#12121299] font-semibold">Professional employees are there for you to pick <br>the most
               amazing and fresh fruits.</p></div>
@@ -519,8 +549,8 @@
 
 
     </section>
-  </main>
 
+  </main>
   <!-- The footer is started from here -->
   <footer class="footer footer-center p-10 bg-black text-primary-content">
     <div>
@@ -558,6 +588,7 @@
       </div>
     </div>
   </footer>
+
 </body>
 
 </html>
